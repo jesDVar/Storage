@@ -2,13 +2,14 @@
 {
     public class Product
     {
-        public int Id;
-        public string Name;
-        public int Price;
-        public DateTime OrderDate;
-        public string Category;
-        public string Shelf;
-        public int Count;
-        public string Description;
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int Price { get; set; }
+        public DateTime OrderDate { get; set; }
+        public string Category { get; set; }
+        public string Shelf { get; set; }
+        public int Count { get; set; }  
+        public string Description { get; set; }
+
     }
 }

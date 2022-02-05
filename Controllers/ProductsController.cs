@@ -152,3 +152,13 @@ namespace Storage.Controllers
         }
     }
 }
+
+
+/*
+ * Skapa ett nytt ActionResult i Products kontrollern
+ * 3. Skapa upp en ny instans av en lEnumerable<ProductViewModel>()
+ * 4. Hämta alla produkter från databasen och mappa den data vi ska använda till vår nya
+ * ProductViewModel
+ * 
+ */
+

@@ -20,6 +20,11 @@ namespace Storage.Controllers
             _context = context;
         }
 
+        //public IActionResult Index()
+        //{
+
+        //}
+
         // GET: Products
         public async Task<IActionResult> Index()
         {

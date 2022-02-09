@@ -20,11 +20,16 @@ namespace Storage.Controllers
             _context = context;
         }
 
-        public IActionResult Index()
-
+        public async Task<IActionResult> OverView()
         {
-            IEnumerable<ProductViewModel>();
-
+            var model = _context.Product.Select(p => new ProductViewModel
+            {
+                Name = p.Name,
+                Count = p.Count,
+                Price = p.Price,
+                InventoryValue = p.Count*p.Price       
+            });
+            return View(await model.ToListAsync());
         }
 
         // GET: Products

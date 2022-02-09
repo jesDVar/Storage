@@ -20,10 +20,12 @@ namespace Storage.Controllers
             _context = context;
         }
 
-        //public IActionResult Index()
-        //{
+        public IActionResult Index()
 
-        //}
+        {
+            IEnumerable<ProductViewModel>();
+
+        }
 
         // GET: Products
         public async Task<IActionResult> Index()
